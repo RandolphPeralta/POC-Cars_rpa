@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS vehicle_db;
+
+USE vehicle_db;
+
+CREATE TABLE IF NOT EXISTS autos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255),
+    precio DECIMAL(15, 2)
+);

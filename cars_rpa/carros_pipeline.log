@@ -1,0 +1,412 @@
+2025-05-09 09:33:13,409 - INFO - Iniciando extracción de datos...
+2025-05-09 09:33:13,411 - INFO - ====== WebDriver manager ======
+2025-05-09 09:33:15,776 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 09:33:16,176 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 09:33:16,448 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 09:33:16,520 - ERROR - Error en el pipeline: [WinError 193] %1 no es una aplicación Win32 válida
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\orchestrator.py", line 21, in run_pipeline
+    carros = extract_carros()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 39, in extract_carros
+    driver = webdriver.Chrome(
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 53, in __init__
+    self.service.start()
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
+    self._start_process(self._path)
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 204, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1022, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1491, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 no es una aplicación Win32 válida
+2025-05-09 09:40:38,622 - INFO - Iniciando extracción de datos...
+2025-05-09 09:40:38,622 - INFO - ====== WebDriver manager ======
+2025-05-09 09:40:40,745 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 09:40:41,134 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 09:40:41,408 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 09:40:41,411 - INFO - ====== WebDriver manager ======
+2025-05-09 09:40:43,182 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 09:40:43,436 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 09:40:43,695 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 09:40:43,699 - ERROR - Error en el pipeline: WebDriver.__init__() got an unexpected keyword argument 'executable_path'
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 47, in extract_carros
+    driver = webdriver.Chrome(
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 53, in __init__
+    self.service.start()
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
+    self._start_process(self._path)
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 204, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1022, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1491, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 no es una aplicación Win32 válida
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\orchestrator.py", line 21, in run_pipeline
+    carros = extract_carros()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 56, in extract_carros
+    driver = webdriver.Chrome(
+             ^^^^^^^^^^^^^^^^^
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'
+2025-05-09 09:56:35,852 - INFO - Iniciando extracción de datos...
+2025-05-09 09:56:35,852 - INFO - ====== WebDriver manager ======
+2025-05-09 09:56:37,684 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 09:56:38,730 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 09:56:39,440 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 09:56:39,441 - INFO - ====== WebDriver manager ======
+2025-05-09 09:56:41,360 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 09:56:41,633 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 09:56:41,909 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 09:56:41,911 - ERROR - Error en el pipeline: WebDriver.__init__() got an unexpected keyword argument 'executable_path'
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 47, in extract_carros
+    driver = webdriver.Chrome(
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 53, in __init__
+    self.service.start()
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
+    self._start_process(self._path)
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 204, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1022, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1491, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 no es una aplicación Win32 válida
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\orchestrator.py", line 21, in run_pipeline
+    carros = extract_carros()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 56, in extract_carros
+    driver = webdriver.Chrome(
+             ^^^^^^^^^^^^^^^^^
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'
+2025-05-09 10:01:26,792 - INFO - Iniciando extracción de datos...
+2025-05-09 10:01:26,794 - INFO - ====== WebDriver manager ======
+2025-05-09 10:01:28,506 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:01:28,827 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:01:29,177 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 10:01:29,185 - INFO - ====== WebDriver manager ======
+2025-05-09 10:01:31,000 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:01:31,261 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:01:31,540 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 10:01:31,547 - INFO - ====== WebDriver manager ======
+2025-05-09 10:01:33,133 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:01:33,378 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:01:33,660 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 10:01:33,724 - ERROR - Error en el pipeline: No se pudo iniciar ChromeDriver después de 3 intentos
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 51, in extract_carros
+    driver = webdriver.Chrome(service=service, options=opts)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 53, in __init__
+    self.service.start()
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
+    self._start_process(self._path)
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 204, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1022, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1491, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 no es una aplicación Win32 válida
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 58, in extract_carros
+    driver = webdriver.Chrome(service=service, options=opts)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 53, in __init__
+    self.service.start()
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 98, in start
+    self._start_process(self._path)
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 204, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1022, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1491, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 no es una aplicación Win32 válida
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 63, in extract_carros
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=opts)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: WebDriver.__init__() got multiple values for argument 'options'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\orchestrator.py", line 21, in run_pipeline
+    carros = extract_carros()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 66, in extract_carros
+    raise Exception("No se pudo iniciar ChromeDriver después de 3 intentos")
+Exception: No se pudo iniciar ChromeDriver después de 3 intentos
+2025-05-09 10:04:29,699 - INFO - Iniciando extracción de datos...
+2025-05-09 10:04:29,699 - INFO - ====== WebDriver manager ======
+2025-05-09 10:04:32,307 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:04:32,591 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:04:32,869 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 10:04:32,869 - INFO - ====== WebDriver manager ======
+2025-05-09 10:04:34,486 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:04:34,757 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:04:35,007 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 10:04:35,007 - INFO - ====== WebDriver manager ======
+2025-05-09 10:04:36,826 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:04:37,078 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:04:37,336 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 10:04:37,336 - ERROR - Error en el pipeline: No se pudo iniciar ChromeDriver después de 3 intentos
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 51, in extract_carros
+    driver = webdriver.Chrome(service=service, options=opts)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 56, in __init__
+    self.service.start()
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 220, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1022, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1491, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 no es una aplicación Win32 válida
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 58, in extract_carros
+    driver = webdriver.Chrome(service=service, options=opts)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 56, in __init__
+    self.service.start()
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 220, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1022, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1491, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 no es una aplicación Win32 válida
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 63, in extract_carros
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=opts)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: WebDriver.__init__() got multiple values for argument 'options'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\orchestrator.py", line 21, in run_pipeline
+    carros = extract_carros()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 66, in extract_carros
+    raise Exception("No se pudo iniciar ChromeDriver después de 3 intentos")
+Exception: No se pudo iniciar ChromeDriver después de 3 intentos
+2025-05-09 10:06:33,425 - INFO - Iniciando extracción de datos...
+2025-05-09 10:06:33,431 - INFO - ====== WebDriver manager ======
+2025-05-09 10:06:35,595 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:06:36,048 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:06:36,337 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 10:06:36,345 - INFO - ====== WebDriver manager ======
+2025-05-09 10:06:38,172 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:06:38,768 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:06:39,041 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 10:06:39,050 - INFO - ====== WebDriver manager ======
+2025-05-09 10:06:40,774 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:06:41,040 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:06:41,308 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 10:06:41,314 - ERROR - Error en el pipeline: No se pudo iniciar ChromeDriver después de 3 intentos
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 51, in extract_carros
+    driver = webdriver.Chrome(service=service, options=opts)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 56, in __init__
+    self.service.start()
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 220, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1022, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1491, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 no es una aplicación Win32 válida
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 58, in extract_carros
+    driver = webdriver.Chrome(service=service, options=opts)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 56, in __init__
+    self.service.start()
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\service.py", line 220, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1022, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Rando\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1491, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 193] %1 no es una aplicación Win32 válida
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 63, in extract_carros
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=opts)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: WebDriver.__init__() got multiple values for argument 'options'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\orchestrator.py", line 21, in run_pipeline
+    carros = extract_carros()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 66, in extract_carros
+    raise Exception("No se pudo iniciar ChromeDriver después de 3 intentos")
+Exception: No se pudo iniciar ChromeDriver después de 3 intentos
+2025-05-09 10:08:53,587 - INFO - Iniciando extracción de datos...
+2025-05-09 10:08:53,829 - INFO - ====== WebDriver manager ======
+2025-05-09 10:08:55,632 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:08:55,915 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-09 10:08:56,241 - INFO - Driver [C:\Users\Rando\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-05-09 10:08:56,295 - ERROR - Error en el pipeline: No se pudo iniciar ChromeDriver: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 58, in extract_carros
+    raise Exception("Se detectó ChromeDriver de 32 bits en sistema de 64 bits")
+Exception: Se detectó ChromeDriver de 32 bits en sistema de 64 bits
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 64, in _binary_paths
+    raise ValueError(f"The path is not a valid file: {path}")
+ValueError: The path is not a valid file: C:\Users\Rando\Downloads\chromedriver_120.0.6099.199\chromedriver.exe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 71, in extract_carros
+    driver = webdriver.Chrome(service=service, options=opts)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 51, in __init__
+    if finder.get_browser_path():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\venv\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\orchestrator.py", line 21, in run_pipeline
+    carros = extract_carros()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 74, in extract_carros
+    raise Exception(f"No se pudo iniciar ChromeDriver: {str(e)}")
+Exception: No se pudo iniciar ChromeDriver: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2025-05-09 10:34:04,204 - INFO - Iniciando extracción de datos...
+2025-05-09 10:34:40,905 - INFO - 51 carros extraídos correctamente.
+2025-05-09 10:34:40,910 - INFO - Iniciando guardado en base de datos...
+2025-05-09 10:34:41,266 - INFO - Proceso completado exitosamente.
+2025-05-09 10:43:39,126 - INFO - Iniciando extracción de datos...
+2025-05-09 10:43:52,009 - ERROR - Error en el pipeline: name 'carros' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\orchestrator.py", line 21, in run_pipeline
+    carros = extract_carros()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\Rando\OneDrive\Documentos\GitHub\Proyectos\cars_rpa\core\extract.py", line 94, in extract_carros
+    return carros
+           ^^^^^^
+NameError: name 'carros' is not defined
+2025-05-09 10:44:24,476 - INFO - Iniciando extracción de datos...
+2025-05-09 10:45:00,879 - INFO - 51 carros extraídos correctamente.
+2025-05-09 10:45:00,879 - INFO - Iniciando guardado en base de datos...
+2025-05-09 10:45:01,159 - INFO - Proceso completado exitosamente.
+2025-05-09 10:53:47,182 - INFO - Iniciando extracción de datos...
+2025-05-09 10:54:22,630 - INFO - 51 carros extraídos correctamente.
+2025-05-09 10:54:22,630 - INFO - Iniciando guardado en base de datos...
+2025-05-09 10:54:22,929 - INFO - Proceso completado exitosamente.
+2025-05-09 11:03:39,236 - INFO - Iniciando extracción de datos...
+2025-05-09 11:04:09,383 - INFO - 48 carros extraídos correctamente.
+2025-05-09 11:04:09,383 - INFO - Iniciando guardado en base de datos...
+2025-05-09 11:04:09,647 - INFO - Proceso completado exitosamente.
+2025-05-09 13:29:18,938 - INFO - Iniciando extracción de datos...
+2025-05-09 13:29:59,280 - INFO - 51 carros extraídos correctamente.
+2025-05-09 13:29:59,284 - INFO - Iniciando guardado en base de datos...
+2025-05-09 13:29:59,653 - INFO - Proceso completado exitosamente.
+2025-05-09 13:31:52,183 - INFO - Iniciando extracción de datos...
+2025-05-09 13:32:40,599 - INFO - 51 carros extraídos correctamente.
+2025-05-09 13:32:40,599 - INFO - Iniciando guardado en base de datos...
+2025-05-09 13:32:40,807 - INFO - Proceso completado exitosamente.
+2025-05-11 14:58:39,650 - INFO - Iniciando extracción de datos...
+2025-05-11 14:59:12,094 - INFO - 48 carros extraídos correctamente.
+2025-05-11 14:59:12,094 - INFO - Iniciando guardado en base de datos...
+2025-05-11 14:59:12,381 - INFO - Proceso completado exitosamente.
